@@ -1,0 +1,71 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="29.0.3">
+  <diagram name="Page-1" id="m7EsRN_uUrbZmCpp1axB">
+    <mxGraphModel dx="1113" dy="662" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="iGcqDou5VldbJLvxgBSF-1" value="ESC" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="185" y="200" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="iGcqDou5VldbJLvxgBSF-3" value="" style="endArrow=none;html=1;rounded=0;jumpSize=6;startSize=6;strokeWidth=4;edgeStyle=orthogonalEdgeStyle;entryX=0.25;entryY=1;entryDx=0;entryDy=0;exitX=0.25;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="iGcqDou5VldbJLvxgBSF-6" target="iGcqDou5VldbJLvxgBSF-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="225" y="440" as="sourcePoint" />
+            <mxPoint x="335" y="319" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iGcqDou5VldbJLvxgBSF-4" value="" style="endArrow=none;html=1;rounded=0;jumpSize=6;startSize=6;strokeWidth=4;exitX=0.5;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="iGcqDou5VldbJLvxgBSF-6" target="iGcqDou5VldbJLvxgBSF-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="245" y="420" as="sourcePoint" />
+            <mxPoint x="245" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iGcqDou5VldbJLvxgBSF-5" value="" style="endArrow=none;html=1;rounded=0;jumpSize=6;startSize=6;strokeWidth=4;exitX=0.75;exitY=0;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;entryX=0.75;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="iGcqDou5VldbJLvxgBSF-6" target="iGcqDou5VldbJLvxgBSF-1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="265" y="430" as="sourcePoint" />
+            <mxPoint x="335" y="340" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iGcqDou5VldbJLvxgBSF-6" value="Thruster" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="185" y="440" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="iGcqDou5VldbJLvxgBSF-7" value="Motor Cables (3x)" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;rotation=-90;" vertex="1" parent="1">
+          <mxGeometry x="145" y="365" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iGcqDou5VldbJLvxgBSF-8" value="MCU&amp;nbsp;&lt;div&gt;(STM32-F401RE)&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="400" y="440" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="iGcqDou5VldbJLvxgBSF-10" value="" style="endArrow=none;html=1;rounded=0;fillColor=#60a917;strokeColor=#2D7600;exitX=1;exitY=0.75;exitDx=0;exitDy=0;edgeStyle=orthogonalEdgeStyle;strokeWidth=2;" edge="1" parent="1" source="iGcqDou5VldbJLvxgBSF-1" target="iGcqDou5VldbJLvxgBSF-8">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="325" y="280" as="sourcePoint" />
+            <mxPoint x="405" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iGcqDou5VldbJLvxgBSF-13" value="PWM [1]" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="340" y="290" width="120" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iGcqDou5VldbJLvxgBSF-14" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;PWM [1]&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ESC Orange wire connects to signal wire (GPIO with timer) on STM32.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ESC Red wire connects to 5V pin of STM32.&lt;/span&gt;&lt;/li&gt;&lt;li&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;ESC Brown wire connects to ground pin of STM32.&lt;/span&gt;&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="145" y="600" width="280" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="iGcqDou5VldbJLvxgBSF-16" value="Power Supply&lt;div&gt;(24V, &amp;lt;2A)&lt;/div&gt;" style="whiteSpace=wrap;html=1;aspect=fixed;" vertex="1" parent="1">
+          <mxGeometry x="520" y="200" width="120" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="iGcqDou5VldbJLvxgBSF-17" value="" style="endArrow=none;html=1;rounded=0;strokeWidth=4;edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.25;exitDx=0;exitDy=0;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="iGcqDou5VldbJLvxgBSF-1" target="iGcqDou5VldbJLvxgBSF-16">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="285" y="210" as="sourcePoint" />
+            <mxPoint x="335" y="160" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="490" y="230" />
+              <mxPoint x="490" y="230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="iGcqDou5VldbJLvxgBSF-18" value="ESC Power [2]" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="370" y="200" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="iGcqDou5VldbJLvxgBSF-21" value="&lt;h1 style=&quot;margin-top: 0px;&quot;&gt;ESC Power [1]&lt;/h1&gt;&lt;p&gt;&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Ideally wire should be 12AWG or thicker&lt;/li&gt;&lt;li&gt;X60 connectors used&lt;/li&gt;&lt;li&gt;24V or 12V&amp;nbsp;&lt;/li&gt;&lt;ul&gt;&lt;li&gt;12V requires must higher current&lt;/li&gt;&lt;/ul&gt;&lt;/ul&gt;&lt;p&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="425" y="600" width="280" height="160" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
