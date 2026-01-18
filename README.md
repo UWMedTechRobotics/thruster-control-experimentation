@@ -1,22 +1,14 @@
 # Thruster Controls Experimentation Firmware
+For details regarding testing results, refer to the [Test Results Table](https://uofwaterloo-my.sharepoint.com/:x:/g/personal/aetarant_uwaterloo_ca/IQDWStpDtX5dRLZYZ64iAWjNAaUsucCty3hMAVqpXVbz9dc?e=oviBQm).
 
-## Requirements
-1. [ ] Communicates with user via serial port.
-2. [ ] Interface with ESC to control the thruster's speed.
-3. [ ] Log frequency into spreadsheet upon request from user.
+## Setup Instructions
+1. Connect Arduino Uno's pin 10* to the PWM signal wire (orange wire) of a given ESC, 
+connect ground wire of ESC (brown wire) to ground of the Arduino Uno.
+2. Connect the ESC to a power source**
+3. Connect the ESC to the thruster
 
-## Specifications
-For Requirement 1:
-- [ ] Write Python script using Serial.py for sending serial data to the STM32.
-- [ ] Write driver for the STM32 for interfacing with the computer's Python script.
-  - Either make this interrupt driven, or ran on a separate thread.
-- [ ] Create GUI in Python using PySimpleGUI for sending and receiving data.
-  - Upon data received, GUI should allow for user to input scale reading.
+(*) Pin used can be changed by editing `ESC_SIGNAL_PIN` in `src/main.ino`. Note that
+the pin used must be PWM compatible. Typically Arduino Uno's denote PWM compatible 
+pins with a ~.
 
-For Requirement 2:
-- [ ] Write driver for the STM32 for interfacing with the ESC via PWM.
-  - Speed control input should be based off of duty cycle %.
-
-For Requirement 3:
-- [ ] Write script in Python for writing received data into a JSON file.
-- [ ] Research how to export the JSON file into Excel.
+(**) The given power source must be able to supply a minimum of 3A at 24V DC.
